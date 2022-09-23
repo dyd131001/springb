@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>구매탭</title>
+<style>
+.active {
+	color: gray;
+}
+.deactive {
+	color: black;
+}
+
+</style>
+    
+
+</head>
+<body>
+  <div class="todo-list">
+    <h1>a</h1>
+    <h1 class = "list-two">b</h1>
+    <h1>c</h1>
+    <h1>d</h1>
+    <h1>e</h1>
+</div>
+<script>
+var todo = document.querySelector("div.todo-list h1:nth-child(1)");
+ 
+function handleTitleClick() {
+    const activeClass = "active";
+    const deactiveClass = "deactive";
+    if (todo.classList.toggle(activeClass)) {
+        todo.classList.remove(deactiveClass);
+    }else if(todo.classList.toggle(deactiveClass)) {};
+};
+todo.addEventListener("click", handleTitleClick)
+</script>
+
+
+</body>
+</html>
+
