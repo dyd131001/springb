@@ -32,17 +32,15 @@
 <body>
     <div id= "frige">냉장고</div>
      <div id="ice">
-       <span th:each="ingred, loop : ${ingredList}" th:text="${ingred.ingredient}">asdas</span>  
+       <div th:each="ingred, loop : ${ingredList}" th:text="${ingred.ingredient}"></div>  
      </div>
 
 <br>
 
 
 
-<a th:herf="@{main/ingred/input/}">
-    <input name="push" type="button" value="재료추가"> 
-    
-    
+<a th:href="@{input/}">
+    <input name="push" type="submit" value="재료추가">
 </a>
 
 <script>

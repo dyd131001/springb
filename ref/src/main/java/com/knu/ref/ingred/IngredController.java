@@ -26,13 +26,14 @@ public class IngredController {
 	
 	@RequestMapping("/input")
 	public String InputIngred() {
+		System.out.println("여기왓을걸?\n");
 		return "input";
 	}
 	
 	@PostMapping("/input")
-	public String createIngred(Model model,@RequestParam String ingredient1) {
-		this.ingredService.create(ingredient1);
-		return "input";
+	public String createIngred(Model model,@RequestParam String ingredient) {
+		this.ingredService.create(ingredient);
+		return "main";
 	}
 	
 	

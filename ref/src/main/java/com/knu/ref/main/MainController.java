@@ -7,25 +7,29 @@ import org.springframework.ui.Model;
 
 
 @Controller
-@RequestMapping("/main")
 public class MainController {
 
-	@RequestMapping("")
+	@RequestMapping("main")
 	public String main() {
 		return "main";
 	}
 	
 
 	
-	@RequestMapping("/recipe")
+	@RequestMapping("main/recipe")
 	public String recipelist() {
 		return "recipelist";
 	}
 	
-	@RequestMapping("/input")
+	@RequestMapping("main/input")
 	public String inputIngred() {
 		return "input";
 	}
+	
+	@RequestMapping("/")
+    public String root() {
+        return "redirect:/main";
+    }
 	
 	
 	
