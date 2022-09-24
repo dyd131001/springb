@@ -16,9 +16,6 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/main/ingred")
 public class IngredController {
 	private final IngredService ingredService;
-	/*
-	 * 
-	 */
 	
 	@RequestMapping("")
 	public String ingred(Model model) {
@@ -40,4 +37,3 @@ public class IngredController {
 	
 	
 }
-//12312312312321

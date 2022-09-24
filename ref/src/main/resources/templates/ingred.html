@@ -1,45 +1,56 @@
 <!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/spring/springb/ref/src/main/resources/templates/ingred.html -->
+<html xmlns:th="http://www.thymeleaf.org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="utf-8">
 <title>식재료 탭</title>
 <style>
-    #frige,#ice{
-        height: 300px; width: 300px;
+    #ice{
+        height: 300px; width: 50%;
         display: inline-block;
         border: 1px solid black;
+        
+    }
+    #frige{
+        width: 50%;
+        border: 1px solid black;
+        text-align: center;
     }
     #text{ 
         height: 200px; width: 300px;
         display: inline-block;
         }
+
+   table { border-collapse:collapse;border: none; }
+    .rowColumn { border-radius:5px;margin:5px; }
+    p{
+        display:inline-block;
+    }
 </style>
     
 
 </head>
 <body>
-<span>냉장고</span>
-<span>냉동실</span>
+    <div id= "frige">냉장고</div>
+     <textarea id="ice" readonly  th:each="ingred, loop : ${ingredList}" th:text="${ingred.ingredient}">
+    
+     </textarea>
+
 <br>
-<div id = "frige">
+
+
+
+<a th:herf="@{main/ingred/input/}">
+    <input name="push" type="button" value="재료추가"> 
     
-</div>
-<div id = "ice">
     
-</div>
+</a>
 
-<br> <br>
+<script>
 
-<div id = "banner">
-    <input name="push" type="button" 
-        value="재료추가"/> 
-    
-    </span>
-</div>
+
+    </script>
 
 
 
-</body>
-</html>
 
+</body></html>
