@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>품앗이</title>
+<style type ="text/css">
+    @font-face {
+    font-family: 'WooridaumB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    }
+    #banner{
+        margin: auto;
+        margin-top:20px;
+        margin-bottom:20px;
+        width: 1080px;
+        height: 40px;
+        background-color:white;
+    }
+    .title{margin-left: 80px ;float:left}
+    .title1{
+        margin-left:10px ;
+        float:left ;
+        color: green;
+        font-size: 40px;
+        font-family: 'WooridaumB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+    .title1 a{
+        text-decoration-line: none;
+        color: green;
+    }
+    .title2{
+        float:right;
+        font-size: 20px;
+        font-family: 'WooridaumB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+    .title2 a{
+        text-decoration-line: none;
+        color: green;
+    }
+
+    #category{
+        margin: auto;
+        width: 1080px;
+        background-color:white;
+        color:black;
+        text-align: center;
+        border-top: 1px solid greenyellow;
+    }
+    .title3 ul li{
+        text-decoration: none;
+        display: inline;
+        margin: 1.5em;
+
+    }
+    .title3 ul li button{
+        border:0;
+        outline:0;
+        background-color: white;
+        font-size: 1em;
+        font-family: 'WooridaumB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+
+    }
+    main{
+        min-height: 700px;
+    }
+    .main-container {
+        width: 1080px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 640px 440px;
+        grid-template-rows: 300px;
+        gap: 10px;
+        margin-bottom: 10px;
+}
+    .main-container1 {
+        width: 1080px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 540px 540px;
+        grid-template-rows: 400px;
+        gap: 10px;
+        margin-bottom: 10px;
+}
+    .main-container2 {
+        width: 1080px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 500px 580px;
+        grid-template-rows: 500px;
+        gap: 10px;
+        margin-bottom: 10px;
+}
+    .box {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #dee3eb;
+        position: relative;
+}
+    .boxtext {
+        font-size: 30px;
+        font-family: 'WooridaumB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+	    position: absolute;
+        z-index: 1;
+        top:85%;
+        left: 20%;
+	    transform: translate( -50%, -50% );
+        color:white;
+    }
+
+    .boxtext2 {
+        font-size: 20px;
+        font-family: 'WooridaumB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+	    position: absolute;
+        z-index: 1;
+        top:10%;
+        left: 50%;
+	    transform: translate( -50%, -50% );
+}
+.intro {
+        font-size: 12px;
+        font-family: 'WooridaumB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/WooridaumB.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+	    position: absolute;
+        z-index: 1;
+        top:20%;
+        line-height: 40px;
+
+}
+    .box img {
+        width: 100%;
+        height: 100%;
+        vertical-align: center;
+        position: relative;
+}
+    .box button{
+        width: 100%;
+        height: 100%;
+        border:0;
+        outline:0;
+        vertical-align: center;
+        position: relative;
+        background-color: white;
+    }
+.box1 {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #dee3eb;
+        position: relative;
+}
+
+.search {
+	    position: absolute;
+        top:50%;
+        left: 50%;
+	    transform: translate( -50%, -50% );
+        width: 80%;
+        background-color: white;
+        border: 1px solid #bbb;
+        border-radius: 8px;
+        padding: 10px 12px;
+    }
+.search input {
+	    position: absolute;
+        top:50%;
+        left: 50%;
+	    transform: translate( -50%, -50% );
+        width: 100%;
+        background-color: white;
+        border: 1px solid #bbb;
+        border-radius: 8px;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+.search img{
+    position : absolute;
+    top:70%;
+    left: 100%;
+	transform: translate( -50%, -50% );
+    color:white;
+    width: 17px;
+    top: 10px;
+    right: 12px;
+    margin: 0;
+}
+sub{
+        min-height: 300px;
+    }
+    .sub-container {
+        border-top: 1px solid greenyellow;
+        width: 1080px;
+        margin: auto;
+        display: grid;
+        height: 300px; /* 각 열(가로줄)의 길이 */
+    }
+</style>
+</head>
+<body>
+<div id = "banner">
+    <span class="title"><a href="{{ url_for('home') }}"><img src="https://cdn.pixabay.com/photo/2014/12/21/23/52/sprouts-576230__480.png" width="40px" height="40px"></a></span>
+    <span class="title1"><a href="{{ url_for('home') }}">품앗이</a></span>
+    <span class="title2">
+        <a href="{{ url_for('home') }}">홈</a>
+		<a href="{{ url_for('profile') }}">내정보</a>
+		<a href="{{ url_for('logout') }}">로그아웃</a>
+    </span>
+</div>
+
+<div id = "category">
+    <div class="title3">
+        <ul>
+            <form action="/post" method="post">
+                <li><button class = "btn" type="submit" value="food">맛집</button></li>
+                <li><button class = "btn" type="submit" value="recipe">레시피 게시판</button></li>
+                <li><button class = "btn" type="submit" value="information">생활 정보 게시판</button></li>
+            </form>
+        </ul>
+    </div>
+</div>
+<main>
+<div class = main-container>
+<div class = "box1">
+    <span class="boxtext2">품앗이 소개</span>
+    <span class="intro">
+    <ul>
+        <li>대학교 근방 기숙사, 자취생들을 위한 커뮤니티, 거래 중심 웹</li>
+        <li>자유롭게 게시판을 이용해보세요! 자취 팁과 근처 맛집, 자유 주제 이 3가지 카테고리로 게시판은 나뉩니다.</li>
+        <li>식재료를 거래하세요! 혼자 사기에는 많은 식재료를 같이 사서 나눠쓰거나 소량의 식재료를 직거래 할 수 있어요. </li>
+        <li>집밥 먹고 싶지 않나요? 같은 학우들에 집에서 밥을 먹어보는게 어떨까요?</li>
+        <li>같은 동네 소모임을 만들어보세요! 가까운 학교 친구들과 함께 경험을 공유하세요.</li>
+    </ul>
+    </span>
+</div>
+<div class = "box">
+    <img src="https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_1280.jpg" >
+    <span class="boxtext"> 추천 식당 </span>
+
+</input>
+</img>
+</div>
+</div>
+</div>
+<div class = main-container1>
+<div class = "box">
+    <button class = "btn" type="submit">
+    <img src="https://cdn.pixabay.com/photo/2016/02/19/10/59/pencil-1209528__480.jpg" ><span class="boxtext"> 게시판 </span></img>
+    </button>
+</div>
+
+
+<div class="box">
+    <button class = "btn" type="submit">
+    <img src="https://cdn.pixabay.com/photo/2016/03/27/21/34/restaurant-1284351__340.jpg" ><span class="boxtext"> 레시피</span></img>
+    </button>
+</div>
+</div>
+
+<div class="main-container2">
+<div class="box">
+    <span class="boxtext2">
+    실시간 인기글
+</span>
+</div>
+<div class="box">
+    <span class="boxtext2">
+    우리 학교 맛집 list
+</span>
+</div>
+</div>
+</div>
+</main>
+<sub>
+    <div class="sub-container">
+
+    </div>
+</sub>
+</body>
+</html>
