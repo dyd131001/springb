@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>레시피탭</title>
+<style>
+    textarea{
+        height: 50px; width:500px;
+        border: none;
+        resize: none;
+        position :relative;
+        bottom : 25px;
+        right : -50px;
+
+    }
+    img{
+        display: inline-block;
+    }
+</style>
+    
+
+</head>
+<body>
+    <a href="@{main/recipelist/detail/1" id = "1" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MTRfMzEg%2FMDAxNjI2MjU1Mjk0OTY4.b3yqHOpztDuOM-imF-CHrB8wS_BzZtyQW1SFkwJmTbAg.nZFhGXubX_rAtYC5WJcnfHhhA8HEeEQ7sJOee5LKaDgg.JPEG.llzzinll%2FIMG_9526.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea  readonly >닭볶음탕: 닭, 설탕, 마늘, 생강, 감자, 당근, 간장, 고춧가루, 대파, 고추</textarea >
+    <br>
+    <a href="@{main/recipelist/detail/2" id = "2" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160301_269%2Fj2toto_14568433332747bVfp_JPEG%2FDSC07570.JPG&type=sc960_832" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >옛날 통닭 : 닭, 소금, 후추, 튀김가루, 식용유</textarea >
+    <br>
+    <a href="@{main/recipelist/detail/3" id = "3" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMDFfOTUg%2FMDAxNjQwOTcxNzQ5ODk2.Pv1Io6iK9UGMQ7zyORw3FXeMSA9NCgTbPAp3-4CCu78g.lG2sAZa-O6k8I6gR4Vo67OMJw36U5G_FujJOcEigis4g.JPEG.tayang1029%2FSE-1a1d2a8e-df6c-4755-81b0-73e995d9fe73.jpg&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >두부 김치: 두부, 간장, 깨, 다진마늘, 삼겹살, 고춧가루, 설탕, 깨, 참기름, 깻잎 ,상추, 김치, 파, 양파, 고추</textarea>
+    <br>
+    <a href="@{main/recipelist/detail/4" id = "4" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMDJfMjMz%2FMDAxNjMzMTAzNDU4MjY2.1o2EMVuq_5pRNE3rbBcp4QZnw6pb0BMiTsUHsgPk6kUg.a0SvjBanR7AnjGnacjrJ1zdR-WuzhHBi9qFpR5wNoVMg.JPEG.peace8012%2FIMG_6792.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >고등어 김치찜: 감자, 양파, 고등어통조림, 파, 청양고추, 간마늘, 고추장, 고춧가루, 진간장, 설탕, 참기름</textarea>
+    <br>
+    <a href="@{main/recipelist/detail/5" id = "5" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MzBfMTIy%2FMDAxNjI1MDU5NjkzMTQ2.fgWvCpmR_TeBgmOPwmXKdxnWNmnMtkKT0vDJvtOfyCcg.8cmiLrrl2nEJ94uFGysmKL4VwqAwOSQFTarrJlqG1Gkg.JPEG.sukm83%2Flp112.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >감자고등어조림 : 감자, 양파, 고등어통조림, 파, 청양고추, 다진마늘, 생강, 고추장, 고춧가루, 진간장, 설탕, 참기름</textarea >
+    <br>
+    <a href="@{main/recipelist/detail/6" id = "6" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150808_136%2Fsung2gamja_14389667156656hOdV_JPEG%2F0-%25B9%25E9%25C1%25BE%25BF%25F8_%25C4%25B7%25C7%25CE%25BF%25E4%25B8%25AE-000.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >바지락찜: 호일, 바지락, 다진마늘, 고추, 식용유</textarea>
+    <br>
+    <a href="@{main/recipelist/detail/7" id = "7" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA3MTdfMTgx%2FMDAxNjU4MDQ4NDY4MjA4.yiwBsCEbGcWb7AIvs2ipNCj4hRssg_rTJfHq2xD7VFYg.R24ScLduKbaHRA0Ia-VQSiTykOlyplj_qXhEkjFJ2DAg.JPEG.id44candy%2F20220713%25A3%25DF190356.jpg&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >노각무침 : 노각, 소금, 다진마늘, 설탕, 고추장, 고춧가루, 참기름, 쪽파</textarea>
+    <br>
+    <a href="@{main/recipelist/detail/8" id = "8" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150730_204%2Flovetogapyjs_14382637352607Xz9S_JPEG%2F%25B2%25C7%25C4%25A1%25C6%25A2%25B1%25E8_%25287%2529.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >통조림 튀김: 꽁치통조림, 고등어통조림, 식용유</textarea>
+    <br>
+    <a href="@{main/recipelist/detail/9" id = "9" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150729_152%2F3jwhjhy_1438103128655dlvep_JPEG%2FIMG_4510.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >꽁치조림: 생강, 설탕, 진간장, 맛술, 물, 통조림꽁치, 꽈리고추, 빨간고추, 깨소금</textarea>
+    <br>    
+    <a href="@{main/recipelist/detail/10" id = "10" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MjdfMjAw%2FMDAxNjMyNzIyNzY2MDc2.MF_Rg3DcG1HjQgJ316-bJe_KpMHyHGFjQ3GL3ffvIBEg.6AHM3544SFkzZ8s0Az3W8AqjNZihlAwtk8RBjksgrOYg.PNG.kimhy004%2FDSCF7004.png&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >된장찌개 : 고기, 무, 쌀뜨물, 된장, 고추장, 설탕, 간마늘, 고추, 파</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/11" id = "11" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAyMjJfMjgw%2FMDAxNjQ1NDU3Mzc3ODc4.e92rOeH_5AYeHsxfkAV0_w1MiE1ybSaVqH4Wt55DPZcg.dmMgqtl7bOO8WEOrXMamaxLvke4qUD0pVqVhDjUCBv0g.JPEG.juhyun9909%2F20220221%25A3%25DF184347.jpg&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >양파캐러멜카레 양파, 소고기, 감자, 당근, 카레</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/12" id = "12" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MjlfMTU4%2FMDAxNjMwMjI0OTAwMzU2.EvUAY98bWJzngBNrpJP_wKPlvtJdYokzvf87Yn6TajUg.vUlNrJzaTpbRt40K6FYYVT5puPQ-QnIv7TrawajEUj8g.JPEG.kgyfjq%2FIMG_8384.jpg&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >5분 볶음라면: 라면, 대파, 식용유</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/13" id = "13" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MTZfMjM4%2FMDAxNjIxMTU5NDU4ODk1.0Uc5yNKdBOkJBzRNLuR6k2qcrzMFhzcGmneV7_6fzY0g.JRCdUZkUeBM6zE_Xo_q_ayHQLzSGk-pEKR0isPVK6ngg.JPEG.sally5718%2FIMG_5288.jpg&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >정통 쌀국수: 차돌박이, 새송이버섯, 파, 무, 양파, 다진마늘, 설탕, 멸치액젓, 진간장, 식용유, 건새우, 쌀국수면</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/14" id = "14" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MDhfMTQw%2FMDAxNjIzMTI2MTE5MjY4.5Ou44e24kQRxx_iLxhbbfBtlRUsjRgxLRanuBrZ7r-wg.gwwYce5tXvqUvekp-u_TDMwjFoYozd2rzKQtMNxY4lwg.JPEG.euneuntwin0506%2FIMG_7530.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >콩없이만드는 콩국수: 두부, 통깨, 땅콩버터, 설탕, 소금, 국수면</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/15" id = "15" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150920_88%2Fjining36_1442721530562oV6zS_JPEG%2FP20150908_153517278_A3242DA6-F190-4BF0-AAB6-C3B8C8026BB0.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >스팸주먹밥: 스팸, 김, 밥</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/16" id = "16" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAyMjNfMjc2%2FMDAxNjQ1NjI4MTY5MTYx.dPtuSuQPiB0HIoz2vNCVBS82_zfTX49itgIzQE5SSCYg.SOhZHkOCL6z6nGdGuZ_DL5_-qSJ24YJG1a_yzWF9mlsg.JPEG.candoon%2FDSC01041.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >떡국떡 맛탕: 식용유, 떡국떡, 설탕, 진간장, 물</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/17" id = "17" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150717_97%2Fnobazero_1437108495497WEJ8y_JPEG%2F%25BA%25D0%25C8%25AB%25BC%25D2%25BD%25C3%25C1%25F6-%25B8%25DE%25C0%25CE.jpg&type=ofullfill340_600_png" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >소금소시지: 소시지, 소금, 식용유</textarea >
+    <br>  
+    <a href="@{main/recipelist/detail/18" id = "18" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150622_132%2Fzaawoo_1434951223148xVSKs_JPEG%2FIMG_3054.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >칼로리폭탄 샌드위치: 땅콩버터, 식빵, 바나나, 초콜릿, 버터, 모짜렐라 치즈</textarea >
+    <br>  
+    <a href="@{main/recipelist/detail/19" id = "19" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150302_169%2Fmoonra84_1425266423788SKa3f_JPEG%2FDSC_0044.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >들기름 달걀프라이: 계란, 들기름, 간장, 파</textarea >
+    <br>  
+    <a href="@{main/recipelist/detail/20" id = "20" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150527_41%2Fgotan__1432718793429vG1Vd_JPEG%2FDSCN6898.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >마리텔 빵푸딩: 빵, 투게더아이스크림, 달걀, 설탕</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/21"  id = "21" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150624_17%2Fsj9800_1435092080596eon4n_JPEG%2FDSC04678.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly>초간단 밀크쉐이크: 바나나, 우유, 아이스크림, 설탕, 땅콩버터</textarea>
+    <br>  
+    <a href="@{main/recipelist/detail/22" id = "22" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20151225_82%2Fkjy704kim_1451048722950AzsuD_JPEG%2F1441450545638.jpeg&type=ofullfill340_600_png" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >작업용 1인 수박주: 수박, 빨대, 나무젓가락, 사이다, 소주</textarea >
+    <br>  
+    <a href="@{main/recipelist/detail/23" id = "23" height="1" width="2" target="_blank">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150616_11%2Flalala7887_1434383490679l06B5_JPEG%2FDSC05130.JPG&type=a340" height="100" width="200" alt="위의 이미지를 누르면 연결됩니다.">
+    </a>
+    <textarea readonly >소주 모히또: 얼음, 레몬, 설탕, 깻잎, 소주, 사이다</textarea>
+    <br>  
+
+</body>
+</html>
+
