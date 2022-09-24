@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import lombok.RequiredArgsConstructor;
 
@@ -31,7 +32,11 @@ public class IngredController {
 		return "input";
 	}
 	
-	
+	@PostMapping("/input")
+	public String createIngred(Model model,@RequestParam String ingredient1) {
+		this.ingredService.create(ingredient1);
+		return "input";
+	}
 	
 	
 }
